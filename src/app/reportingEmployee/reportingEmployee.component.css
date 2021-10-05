@@ -1,0 +1,9 @@
+.reporting-ee-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.ee-actions > * {
+    padding: 10px;
+}

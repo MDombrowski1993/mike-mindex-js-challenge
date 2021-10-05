@@ -8,6 +8,7 @@ import {AppComponent} from './app.component';
 import {BackendlessMockService} from './backendless-mock.service';
 import {EmployeeComponent} from './employee/employee.component';
 import {EmployeeListComponent} from './employee-list/employee-list.component';
+import { ReportingEmployeeComponent } from './reportingEmployee/reportingEmployee.component';
 import {EmployeeService} from './employee.service';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -20,7 +21,8 @@ import {MatButtonModule} from '@angular/material/button';
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    ReportingEmployeeComponent
   ],
   imports: [
     BrowserModule,
