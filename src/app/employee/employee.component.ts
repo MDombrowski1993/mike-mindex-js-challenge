@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 import {Employee} from '../employee';
 
@@ -7,8 +8,13 @@ import {Employee} from '../employee';
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent {
+export class EmployeeComponent{
   @Input() employee: Employee;
+  @Output() onEeEditCallback: EventEmitter<any> = new EventEmitter();
+
+  public onEditEmployee = ({event, data}) => {
+    this.onEeEditCallback.emit({event, data});
+  }
 
   constructor() {
   }

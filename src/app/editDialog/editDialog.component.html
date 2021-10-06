@@ -1,0 +1,20 @@
+<h1>UPDATE COMPENSATION</h1>
+<form>
+    <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input disabled matInput [(ngModel)]="dialogPayload.ee.firstName" name="firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input disabled matInput [(ngModel)]="dialogPayload.ee.lastName" name="lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Position</mat-label>
+        <input disabled matInput [(ngModel)]="dialogPayload.ee.position" name="position">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Compensation</mat-label>
+        <input matInput [(ngModel)]="dialogPayload.ee.compensation" name="compensation">
+    </mat-form-field>
+    <button mat-button (click)="saveEeEdit($event)">Save</button>
+</form>

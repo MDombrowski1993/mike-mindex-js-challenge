@@ -1,0 +1,11 @@
+<ng-container *ngIf="!isLoading; else loadingTreatment">
+    <div class="reporting-ee-details">
+        <p>{{ee.firstName}} {{ee.lastName}}</p>
+        <div class="ee-actions">
+            <mat-icon (click)="openEditDialog()">edit</mat-icon>
+            <mat-icon (click)="deleteEe()">delete</mat-icon>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #loadingTreatment><span>Loading...</span></ng-template>
