@@ -1,5 +1,5 @@
 <mat-grid-list class="employee-list" cols="1">
   <mat-grid-tile *ngFor="let emp of employees">
-    <app-employee class="employee-list-item" [employee]="emp"></app-employee>
+    <app-employee class="employee-list-item" (onEeEditCallback)="editEmployee(emp)" [employee]="emp"></app-employee>
   </mat-grid-tile>
 </mat-grid-list>

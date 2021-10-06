@@ -9,6 +9,7 @@ import {BackendlessMockService} from './backendless-mock.service';
 import {EmployeeComponent} from './employee/employee.component';
 import {EmployeeListComponent} from './employee-list/employee-list.component';
 import { ReportingEmployeeComponent } from './reportingEmployee/reportingEmployee.component';
+import { EditDialogComponent } from './editDialog/editDialog.component';
 import {EmployeeService} from './employee.service';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -16,13 +17,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    ReportingEmployeeComponent
+    ReportingEmployeeComponent,
+    EditDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatInputModule,
     MatMenuModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
